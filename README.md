@@ -13,7 +13,7 @@ This version adds support for subscribing to a specific Azure Notification Hub T
 To install from the command line:
 
 ```
-cordova plugin add cordova-azure-notification-hubs
+cordova plugin add https://github.com/santiagons/cordova-azure-notification-hubs.git
 ```
 
 Download your Firebase project's `google-services.json` file to the Cordova project's `platforms/android/` folder.
