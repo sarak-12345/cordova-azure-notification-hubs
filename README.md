@@ -2,8 +2,11 @@
 
 Register and receive push notifications with Azure Notification Hubs.
 
-This cordova plugin is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push).
+This cordova plugin is based on [derek82511/cordova-azure-notification-hubs](https://github.com/derek82511/cordova-azure-notification-hubs) which is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push).
 Check the api on https://github.com/phonegap/phonegap-plugin-push
+
+This version adds support for subscribing to a specific Azure Notification Hub Tag upon registration.
+
 
 ## Installation
 
