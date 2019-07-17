@@ -42,6 +42,7 @@ var push = PushNotification.init({
     //設定 Notification Hub 相關參數
     notificationHubPath: 'Your Notification Hub Name',
     connectionString: 'Your Notification Hub Listen Connection String',
+    tag: 'your_tag',
     
     android: {
         sound: true
