@@ -2,15 +2,18 @@
 
 Register and receive push notifications with Azure Notification Hubs.
 
-This cordova plugin is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push).
+This cordova plugin is based on [derek82511/cordova-azure-notification-hubs](https://github.com/derek82511/cordova-azure-notification-hubs) which is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push).
 Check the api on https://github.com/phonegap/phonegap-plugin-push
+
+This version adds support for subscribing to a specific Azure Notification Hub Tag upon registration.
+
 
 ## Installation
 
 To install from the command line:
 
 ```
-cordova plugin add cordova-azure-notification-hubs
+cordova plugin add https://github.com/santiagons/cordova-azure-notification-hubs.git
 ```
 
 Download your Firebase project's `google-services.json` file to the Cordova project's `platforms/android/` folder.
@@ -39,6 +42,7 @@ var push = PushNotification.init({
     //設定 Notification Hub 相關參數
     notificationHubPath: 'Your Notification Hub Name',
     connectionString: 'Your Notification Hub Listen Connection String',
+    tags: 'your_tag',
     
     android: {
         sound: true
